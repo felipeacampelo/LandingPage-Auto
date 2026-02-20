@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Heart, Instagram, Facebook, Youtube, MapPin, Phone, Mail } from "lucide-react"
+import { Heart, Instagram, Youtube, MapPin, Phone, Mail } from "lucide-react"
 
 export function Footer() {
   return (
@@ -16,24 +16,21 @@ export function Footer() {
           >
             <h3 className="text-2xl font-bold text-gold">Rei da Verdade</h3>
             <p className="text-gray-400 leading-relaxed">
-              Auto de Páscoa 2026 - Uma produção da Igreja Batista Capital que há mais de uma década 
-              transforma vidas através da arte e da fé.
+              Auto de Páscoa 2026 - Uma produção da Igreja Batista Capital.
             </p>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://www.instagram.com/autodepascoa/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-gold/20 transition-colors"
               >
                 <Instagram className="w-5 h-5 text-gray-400 hover:text-gold" />
               </a>
               <a
-                href="#"
-                className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-gold/20 transition-colors"
-              >
-                <Facebook className="w-5 h-5 text-gray-400 hover:text-gold" />
-              </a>
-              <a
-                href="#"
+                href="https://www.youtube.com/@IgrejaBatistaCapital"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-gold/20 transition-colors"
               >
                 <Youtube className="w-5 h-5 text-gray-400 hover:text-gold" />
@@ -50,17 +47,17 @@ export function Footer() {
           >
             <h4 className="text-lg font-semibold text-white">Contato</h4>
             <div className="space-y-3">
-              <div className="flex items-start gap-3 text-gray-400">
+              <a href="https://share.google/G7Rec8joY0bNIUkrh" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 text-gray-400 hover:text-gold transition-colors">
                 <MapPin className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
                 <p>Igreja Batista Capital<br />Brasília, DF</p>
-              </div>
+              </a>
               <div className="flex items-center gap-3 text-gray-400">
                 <Phone className="w-5 h-5 text-gold" />
-                <p>(61) 3000-0000</p>
+                <p>+55 61 99199-4412</p>
               </div>
               <div className="flex items-center gap-3 text-gray-400">
                 <Mail className="w-5 h-5 text-gold" />
-                <p>contato@ibcapital.org.br</p>
+                <p>eventos@igrejacapital.org.br</p>
               </div>
             </div>
           </motion.div>

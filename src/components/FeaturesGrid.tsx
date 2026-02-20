@@ -10,13 +10,13 @@ const features = [
     color: "gold"
   },
   {
-    title: "Trilhas Originais",
+    title: "70% de composição autoral",
     description: "Músicas compostas exclusivamente para o espetáculo, criando momentos únicos e emocionantes.",
     color: "gold"
   },
   {
     title: "Acessibilidade",
-    description: "Estrutura adaptada para pessoas com deficiência, garantindo que todos possam participar.",
+    description: "Sessão adaptada para pessoas com deficiência visual e auditiva, garantindo que todos possam participar.",
     color: "gold"
   },
   {
@@ -31,7 +31,7 @@ const features = [
   },
   {
     title: "Classificação 10 Anos",
-    description: "Conteúdo adequado para toda a família, com cenas adaptadas para o público infantil.",
+    description: "A classificação indicativa é a partir de 10 anos. Menores de 10 anos têm entrada gratuita, sem ocupação de assento.",
     color: "wine"
   }
 ]

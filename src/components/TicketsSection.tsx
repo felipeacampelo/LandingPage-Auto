@@ -63,10 +63,9 @@ export function TicketsSection({ onDonateClick }: TicketsSectionProps) {
             <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-wine/30 to-wine/10 flex items-center justify-center mb-6">
               <Heart className="w-8 h-8 text-red-400" />
             </div>
-            <h3 className="text-2xl font-bold text-white mb-3">Doar Ingresso</h3>
+            <h3 className="text-2xl font-bold text-wine mb-3">Doar Ingresso</h3>
             <p className="text-gray-400 mb-6 leading-relaxed flex-grow">
-              Faça uma doação no valor de um ingresso para ajudar. 
-              Sua contribuição faz a diferença!
+             Doe ingressos para que pessoas de projetos sociais e famílias sem condições financeiras tenham a oportunidade de assistir ao musical.
             </p>
             <Button variant="secondary" size="lg" className="w-full mt-auto" onClick={onDonateClick}>
               Doar Ingresso

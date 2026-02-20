@@ -29,7 +29,7 @@ export function AboutSection() {
             className="space-y-6"
           >
             <p className="text-lg text-gray-300 leading-relaxed">
-              O <strong className="text-gold">Auto de Páscoa "Rei da Verdade"</strong> é uma produção 
+              A <strong className="text-gold">Auto de Páscoa "Rei da Verdade"</strong> é uma produção 
               teatral que transcende o entretenimento convencional. Uma experiência imersiva que 
               combina arte, fé e emoção em uma narrativa poderosa sobre a vida, morte e ressurreição 
               de Jesus Cristo.
@@ -72,7 +72,7 @@ export function AboutSection() {
               <div>
                 <h3 className="text-xl font-semibold text-white mb-2">Feito com Amor</h3>
                 <p className="text-gray-400">
-                  Mais de 200 voluntários dedicados que doam seu tempo e talento para criar essa experiência.
+                  Mais de 300 voluntários dedicados que doam seu tempo e talento para criar essa experiência.
                 </p>
               </div>
             </div>

@@ -11,7 +11,7 @@ const buttonVariants = cva(
         default: "bg-gold text-black hover:bg-gold/90 hover:scale-105 shadow-lg shadow-gold/25",
         destructive: "bg-red-500 text-white hover:bg-red-500/90",
         outline: "border-2 border-gold text-gold bg-transparent hover:bg-gold hover:text-black",
-        secondary: "bg-wine text-white hover:bg-wine/80",
+        secondary: "bg-wine text-black hover:bg-wine/80",
         ghost: "hover:bg-white/10 text-white",
         link: "text-gold underline-offset-4 hover:underline",
       },
