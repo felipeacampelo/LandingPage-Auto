@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   description: "Uma experiência cinematográfica que vai tocar sua alma. Auto de Páscoa 2026 em Brasília. De 30 de março a 03 de abril. Garanta seu ingresso!",
   keywords: ["Auto de Páscoa", "Rei da Verdade", "Igreja Batista Capital", "Brasília", "Páscoa 2026", "Teatro Cristão"],
   authors: [{ name: "Igreja Batista Capital" }],
+  icons: {
+    icon: "/favicon.jpg",
+  },
   openGraph: {
     title: "Rei da Verdade | Auto de Páscoa 2026",
     description: "Uma experiência cinematográfica que vai tocar sua alma. De 30 de março a 03 de abril em Brasília.",
