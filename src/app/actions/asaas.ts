@@ -95,7 +95,6 @@ async function findOrCreateCustomer(data: PaymentData): Promise<AsaasCustomerRes
 async function createPayment(customerId: string, value: number, description: string): Promise<AsaasPaymentResponse | null> {
   try {
     const dueDate = new Date()
-    dueDate.setDate(dueDate.getDate() + 1)
 
     const response = await fetch(`${ASAAS_API_URL}/payments`, {
       method: "POST",
@@ -110,6 +109,7 @@ async function createPayment(customerId: string, value: number, description: str
         dueDate: dueDate.toISOString().split("T")[0],
         description: description,
         externalReference: `autopascoa2026_${Date.now()}`,
+        postalService: false,
       }),
     })
 

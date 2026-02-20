@@ -14,7 +14,7 @@ export function HeroSection() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/BACKGROUND-SITE-AUTO-DE-PÁSCOA-2026-.png')" }}
+        style={{ backgroundImage: "url('/background-hero.png')" }}
       />
       <div className="absolute inset-0 bg-black/50" />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black" />
@@ -38,7 +38,7 @@ export function HeroSection() {
           className="mb-4"
         >
           <Image
-            src="/LOGO REI DA VERDADE SITE AUTO DE PÁSCOA 2026.png"
+            src="/logo-rei-da-verdade.png"
             alt="Rei da Verdade - Auto de Páscoa 2026"
             width={800}
             height={300}
