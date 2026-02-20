@@ -19,12 +19,12 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-black/50" />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black" />
 
-      <div className="relative z-10 text-center px-4 max-w-5xl mx-auto pt-16">
+      <div className="relative z-10 text-center px-4 max-w-5xl mx-auto pt-4">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="mb-4"
+          className="mb-2"
         >
           <span className="text-gold/80 text-sm md:text-base tracking-[0.3em] uppercase font-medium">
             Igreja Batista Capital apresenta
@@ -37,7 +37,7 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-2xl md:text-3xl lg:text-4xl text-gray-300 -mb-6 tracking-wide"
         >
-          Auto de Páscoa
+          AUTO DE PÁSCOA
         </motion.p>
 
         <motion.div

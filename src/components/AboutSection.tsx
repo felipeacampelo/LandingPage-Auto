@@ -29,20 +29,16 @@ export function AboutSection() {
             className="space-y-6"
           >
             <p className="text-lg text-gray-300 leading-relaxed">
-              A <strong className="text-gold">Auto de Páscoa "Rei da Verdade"</strong> é uma produção 
-              teatral que transcende o entretenimento convencional. Uma experiência imersiva que 
-              combina arte, fé e emoção em uma narrativa poderosa sobre a vida, morte e ressurreição 
-              de Jesus Cristo.
+              A Igreja Batista Capital apresenta a 12ª edição do seu tradicional Auto de Páscoa, que em 2026 traz o tema "Rei da Verdade". O musical, já consolidado no calendário cultural cristão do Distrito Federal, retrata de forma artística e musical a vida e a jornada de Jesus Cristo na Terra.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              Com uma <strong className="text-white">trilha sonora 100% autoral</strong>, cenografia 
-              cinematográfica e um elenco de mais de 200 voluntários apaixonados, cada apresentação 
-              é uma jornada transformadora que toca corações e renova esperanças.
+              Ao longo de sua história, o espetáculo já foi assistido por mais de 30 mil pessoas, tornando-se uma das maiores produções voluntárias do segmento na região. A classificação indicativa é a partir de 10 anos.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              Há mais de uma década, a Igreja Batista Capital realiza este espetáculo que já impactou 
-              milhares de vidas em Brasília, tornando-se referência em produções teatrais cristãs 
-              no Brasil.
+              Com estrutura cênica e musical de grande porte, o Auto conta com banda e orquestra ao vivo, que conduzem a narrativa sonora das cenas. O elenco passa por audições e preparação técnica específica para a execução das músicas e interpretações. Atualmente, o projeto mobiliza aproximadamente 400 voluntários por temporada, organizados em equipes de elenco, banda e orquestra, dança, contrarregra, cenografia, figurino, maquiagens especiais, recepção, coordenação, áreas técnicas e suporte geral.
+            </p>
+            <p className="text-lg text-gray-300 leading-relaxed">
+              Além do espetáculo, a Igreja Batista Capital promove ações de acessibilidade e inclusão social. Parte dos ingressos é destinada a comunidades em situação de vulnerabilidade social do Distrito Federal e entorno. O musical também oferece sessões com recursos de áudio descrição para pessoas cegas e intérpretes de Libras para o público surdo, reforçando o compromisso com uma experiência cultural acessível e inclusiva.
             </p>
           </motion.div>
 
