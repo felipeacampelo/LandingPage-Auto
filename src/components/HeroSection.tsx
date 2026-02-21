@@ -82,7 +82,7 @@ export function HeroSection() {
               →
             </motion.span>
           </Button>
-          <Button variant="outline" size="xl" onClick={() => document.getElementById("doar")?.scrollIntoView({ behavior: "smooth" })} className="w-full sm:w-auto">
+          <Button variant="secondary" size="xl" onClick={() => document.getElementById("doar")?.scrollIntoView({ behavior: "smooth" })} className="w-full sm:w-auto">
             Doe um Ingresso
           </Button>
           <Button variant="ghost" size="lg" onClick={() => document.getElementById("sobre")?.scrollIntoView({ behavior: "smooth" })} className="w-full sm:w-auto text-gray-300 hover:text-white">
