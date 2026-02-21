@@ -35,7 +35,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-2xl md:text-3xl lg:text-4xl text-gray-300 -mb-6 tracking-wide"
+          className="text-2xl md:text-3xl lg:text-4xl text-gray-300 mb-2 md:-mb-6 tracking-wide"
         >
           AUTO DE PÁSCOA
         </motion.p>
@@ -71,7 +71,7 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.7 }}
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
-          <Button size="xl" onClick={scrollToTickets} className="group">
+          <Button size="xl" onClick={scrollToTickets} className="group w-full sm:w-auto">
             GARANTIR MEU INGRESSO
             <motion.span
               className="ml-2"
@@ -81,7 +81,7 @@ export function HeroSection() {
               →
             </motion.span>
           </Button>
-          <Button variant="outline" size="lg" onClick={() => document.getElementById("sobre")?.scrollIntoView({ behavior: "smooth" })}>
+          <Button variant="outline" size="xl" onClick={() => document.getElementById("sobre")?.scrollIntoView({ behavior: "smooth" })} className="w-full sm:w-auto">
             Saiba Mais
           </Button>
         </motion.div>

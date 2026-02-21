@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   keywords: ["Auto de Páscoa", "Rei da Verdade", "Igreja Batista Capital", "Brasília", "Páscoa 2026", "Teatro Cristão"],
   authors: [{ name: "Igreja Batista Capital" }],
   icons: {
-    icon: "/favicon.jpg",
+    icon: "/icon.png",
   },
   openGraph: {
     title: "Rei da Verdade | Auto de Páscoa 2026",
