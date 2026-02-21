@@ -71,8 +71,8 @@ export function TicketsSection() {
               eventos@igrejacapital.org.br
             </a>
           </div>
-          <p className="mt-4 text-center text-lg text-white font-medium">
-            Esperamos por você no Auto de Páscoa 2026 – Rei da Verdade.
+          <p className="mt-4 text-left text-lg text-white font-medium">
+            Esperamos por você no Auto de Páscoa 2026 – Rei da Verdade
           </p>
         </motion.div>
 
