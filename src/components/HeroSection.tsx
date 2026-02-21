@@ -35,7 +35,8 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-2xl md:text-3xl lg:text-4xl text-gray-300 mb-2 md:-mb-6 tracking-wide"
+          className="text-2xl md:text-3xl lg:text-4xl mb-2 md:-mb-6 tracking-wide"
+          style={{ color: 'rgb(245, 240, 223)' }}
         >
           AUTO DE PÁSCOA
         </motion.p>

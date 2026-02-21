@@ -31,7 +31,7 @@ const features = [
   },
   {
     title: "Classificação 10 Anos",
-    description: "A classificação indicativa é a partir de 10 anos. Menores de 10 anos têm entrada gratuita, sem ocupação de assento.",
+    description: "A classificação indicativa é a partir de 10 anos.",
     color: "wine"
   }
 ]
