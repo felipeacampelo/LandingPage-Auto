@@ -1,89 +1,118 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { Ticket, Heart, ExternalLink } from "lucide-react"
+import { Ticket, Calendar, Clock, ExternalLink, Info, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
-const EXTERNAL_PURCHASE_URL = "https://www.e-inscricao.com/igrejacapital?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnOxH3wzBgy7aE3R0D6FlU4QJ3eFGawLb8uGL094KIFwhmgbzFzyvg2wMI-HA_aem_oA-9Uc7Q951rwQS5PFHSog"
+const sessions = [
+  { date: "30 de Março", day: "Segunda", time: "20h", url: "https://www.e-inscricao.com/igrejacapital/auto30mar" },
+  { date: "31 de Março", day: "Terça", time: "20h", url: "https://www.e-inscricao.com/igrejacapital/auto31mar" },
+  { date: "1 de Abril", day: "Quarta", time: "20h", url: "https://www.e-inscricao.com/igrejacapital/auto1abr" },
+  { date: "2 de Abril", day: "Quinta", time: "20h", url: "https://www.e-inscricao.com/igrejacapital/auto2abr" },
+  { date: "3 de Abril", day: "Sexta", time: "15h", url: "https://www.e-inscricao.com/igrejacapital/auto3abr15h" },
+  { date: "3 de Abril", day: "Sexta", time: "20h", url: "https://www.e-inscricao.com/igrejacapital/auto3abr20h" },
+]
 
-interface TicketsSectionProps {
-  onDonateClick: () => void
-}
+const infoItems = [
+  { title: "Ingressos individuais", description: "Cada ingresso é válido para 1 pessoa e dá direito a 1 assento." },
+  { title: "Acomodação no auditório", description: "Os assentos não são numerados e serão ocupados por ordem de chegada. Recomendamos chegar com antecedência para garantir melhores lugares." },
+  { title: "Política para crianças", description: "Crianças a partir de 8 anos pagam ingresso normalmente. Crianças menores de 8 anos possuem gratuidade, porém não têm direito a assento, devendo permanecer no colo do responsável." },
+  { title: "Acesso ao evento", description: "Apresente o QR Code ou o ticket recebido por e-mail no hall de entrada do auditório para validação." },
+  { title: "Horário de entrada", description: "Fique atento ao horário da sua sessão. Chegue com antecedência para validar seu ingresso com tranquilidade e garantir melhor acomodação." },
+]
 
-export function TicketsSection({ onDonateClick }: TicketsSectionProps) {
+export function TicketsSection() {
   return (
     <section id="ingressos" className="py-24 px-4 bg-gradient-to-b from-zinc-950 to-black">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
             Garanta seu <span className="text-gold">Ingresso</span>
           </h2>
-          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Escolha como participar deste momento especial.
-          </p>
-          <div className="w-24 h-1 bg-gradient-to-r from-transparent via-gold to-transparent mx-auto mt-6" />
+          <div className="w-24 h-1 bg-gradient-to-r from-transparent via-gold to-transparent mx-auto" />
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-8 items-stretch">
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="p-8 rounded-3xl bg-gradient-to-b from-gold/10 to-transparent border border-gold/20 hover:border-gold/40 transition-all flex flex-col"
-          >
-            <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-gold/20 to-gold/5 flex items-center justify-center mb-6">
-              <Ticket className="w-8 h-8 text-gold" />
-            </div>
-            <h3 className="text-2xl font-bold text-white mb-3">Comprar Ingresso</h3>
-            <p className="text-gray-400 mb-6 leading-relaxed flex-grow">
-              Adquira seu ingresso através do nosso site oficial de vendas. Garanta sua presença no Auto de Páscoa 2026.
-            </p>
-            <Button asChild size="lg" className="w-full group mt-auto">
-              <a href={EXTERNAL_PURCHASE_URL} target="_blank" rel="noopener noreferrer">
-                Comprar Ingresso
-                <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-              </a>
-            </Button>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="p-8 rounded-3xl bg-gradient-to-b from-wine/20 to-transparent border border-wine/20 hover:border-wine/40 transition-all flex flex-col"
-          >
-            <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-wine/30 to-wine/10 flex items-center justify-center mb-6">
-              <Heart className="w-8 h-8 text-red-400" />
-            </div>
-            <h3 className="text-2xl font-bold text-wine mb-3">Doar Ingresso</h3>
-            <p className="text-gray-400 mb-6 leading-relaxed flex-grow">
-             Doe ingressos para que pessoas de projetos sociais e famílias sem condições financeiras tenham a oportunidade de assistir ao musical.
-            </p>
-            <Button variant="secondary" size="lg" className="w-full mt-auto" onClick={onDonateClick}>
-              Doar Ingresso
-              <Heart className="w-4 h-4 ml-2" />
-            </Button>
-          </motion.div>
-        </div>
-
+        {/* Informações Importantes */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="mt-12 text-center"
+          transition={{ duration: 0.8, delay: 0.1 }}
+          className="mb-16 p-8 rounded-3xl bg-gradient-to-b from-gold/5 to-transparent border border-gold/20"
         >
-          <p className="text-gray-500 text-sm">
-            
+          <div className="flex items-center gap-3 mb-6">
+            <Info className="w-6 h-6 text-gold" />
+            <h3 className="text-2xl font-bold text-white">Informações Importantes sobre seu Ingresso</h3>
+          </div>
+          <p className="text-gray-400 mb-6">
+            Para garantir uma experiência tranquila e organizada, leia atentamente as orientações abaixo:
           </p>
+          <div className="space-y-4">
+            {infoItems.map((item, index) => (
+              <div key={index} className="flex gap-3">
+                <div className="w-2 h-2 rounded-full bg-gold mt-2 flex-shrink-0" />
+                <div>
+                  <span className="font-bold text-gold">{item.title}</span>
+                  <p className="text-gray-400">{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="mt-6 pt-6 border-t border-gold/20 flex items-center gap-2 text-gray-400">
+            <Mail className="w-4 h-4 text-gold" />
+            <span>Em caso de dúvidas, entre em contato: </span>
+            <a href="mailto:eventos@igrejacapital.org.br" className="text-gold hover:underline">
+              eventos@igrejacapital.org.br
+            </a>
+          </div>
+          <p className="mt-4 text-center text-lg text-white font-medium">
+            Esperamos por você no Auto de Páscoa 2026 – Rei da Verdade.
+          </p>
+        </motion.div>
+
+        {/* Cards de Sessões */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="mb-8"
+        >
+          <h3 className="text-2xl font-bold text-white text-center mb-8">Escolha sua Sessão</h3>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {sessions.map((session, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.1 * index }}
+                className="p-6 rounded-2xl bg-gradient-to-b from-gold/10 to-transparent border border-gold/20 hover:border-gold/40 transition-all group"
+              >
+                <div className="flex items-center gap-2 mb-2">
+                  <Calendar className="w-5 h-5 text-gold" />
+                  <span className="text-xl font-bold text-white">{session.date}</span>
+                </div>
+                <div className="flex items-center gap-2 mb-4">
+                  <Clock className="w-4 h-4 text-gray-400" />
+                  <span className="text-gray-400">{session.day} • {session.time}</span>
+                </div>
+                <Button asChild size="default" className="w-full group">
+                  <a href={session.url} target="_blank" rel="noopener noreferrer">
+                    <Ticket className="w-4 h-4 mr-2" />
+                    Comprar
+                    <ExternalLink className="w-3 h-3 ml-2 opacity-50 group-hover:opacity-100 transition-opacity" />
+                  </a>
+                </Button>
+              </motion.div>
+            ))}
+          </div>
         </motion.div>
       </div>
     </section>

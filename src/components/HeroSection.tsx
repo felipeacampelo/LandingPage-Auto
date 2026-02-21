@@ -70,7 +70,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.7 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+          className="flex flex-col sm:flex-row gap-4 justify-center items-center flex-wrap"
         >
           <Button size="xl" onClick={scrollToTickets} className="group w-full sm:w-auto">
             GARANTIR MEU INGRESSO
@@ -82,7 +82,10 @@ export function HeroSection() {
               →
             </motion.span>
           </Button>
-          <Button variant="outline" size="xl" onClick={() => document.getElementById("sobre")?.scrollIntoView({ behavior: "smooth" })} className="w-full sm:w-auto">
+          <Button variant="outline" size="xl" onClick={() => document.getElementById("doar")?.scrollIntoView({ behavior: "smooth" })} className="w-full sm:w-auto">
+            Doe um Ingresso
+          </Button>
+          <Button variant="ghost" size="lg" onClick={() => document.getElementById("sobre")?.scrollIntoView({ behavior: "smooth" })} className="w-full sm:w-auto text-gray-300 hover:text-white">
             Saiba Mais
           </Button>
         </motion.div>

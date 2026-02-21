@@ -29,10 +29,10 @@ interface PixData {
 }
 
 const donationValues = [
-  { value: 20, label: "R$ 20" },
   { value: 30, label: "R$ 30" },
-  { value: 50, label: "R$ 50" },
-  { value: 100, label: "R$ 100" },
+  { value: 60, label: "R$ 60" },
+  { value: 90, label: "R$ 90" },
+  { value: 120, label: "R$ 120" },
 ]
 
 export function DonateModal({ isOpen, onClose }: DonateModalProps) {
@@ -44,7 +44,7 @@ export function DonateModal({ isOpen, onClose }: DonateModalProps) {
     cpf: "",
     phone: "",
   })
-  const [selectedValue, setSelectedValue] = useState(20)
+  const [selectedValue, setSelectedValue] = useState(30)
   const [customValue, setCustomValue] = useState("")
   const [errors, setErrors] = useState<Record<string, string>>({})
   const [isLoading, setIsLoading] = useState(false)
