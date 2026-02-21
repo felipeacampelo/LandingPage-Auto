@@ -5,7 +5,7 @@ import { Ticket, Calendar, Clock, ExternalLink, Info, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const sessions = [
-  { date: "30 de Março", day: "Segunda", time: "20h", url: "https://www.e-inscricao.com/igrejacapital/auto30mar" },
+  { date: "30 de Março", day: "Segunda", time: "20h", url: "https://www.e-inscricao.com/igrejacapital/auto30mar", exclusive: true },
   { date: "31 de Março", day: "Terça", time: "20h", url: "https://www.e-inscricao.com/igrejacapital/auto31mar" },
   { date: "1 de Abril", day: "Quarta", time: "20h", url: "https://www.e-inscricao.com/igrejacapital/auto1abr" },
   { date: "2 de Abril", day: "Quinta", time: "20h", url: "https://www.e-inscricao.com/igrejacapital/auto2abr" },
@@ -103,13 +103,19 @@ export function TicketsSection() {
                   <Clock className="w-4 h-4 text-gray-400" />
                   <span className="text-gray-400">{session.day} • {session.time}</span>
                 </div>
-                <Button asChild size="default" className="w-full group">
-                  <a href={session.url} target="_blank" rel="noopener noreferrer">
-                    <Ticket className="w-4 h-4 mr-2" />
-                    Comprar
-                    <ExternalLink className="w-3 h-3 ml-2 opacity-50 group-hover:opacity-100 transition-opacity" />
-                  </a>
-                </Button>
+                {session.exclusive ? (
+                  <div className="w-full p-3 rounded-lg bg-gold/10 border border-gold/30 text-center">
+                    <span className="text-gold font-semibold text-sm">ESGOTADO</span>
+                  </div>
+                ) : (
+                  <Button asChild size="default" className="w-full group">
+                    <a href={session.url} target="_blank" rel="noopener noreferrer">
+                      <Ticket className="w-4 h-4 mr-2" />
+                      Comprar
+                      <ExternalLink className="w-3 h-3 ml-2 opacity-50 group-hover:opacity-100 transition-opacity" />
+                    </a>
+                  </Button>
+                )}
               </motion.div>
             ))}
           </div>
