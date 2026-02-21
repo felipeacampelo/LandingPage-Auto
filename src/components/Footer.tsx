@@ -80,7 +80,7 @@ export function Footer() {
               <a href="https://www.e-inscricao.com/igrejacapital" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-gold transition-colors">
                 Comprar Ingresso
               </a>
-              <a href="#" className="block text-gray-400 hover:text-gold transition-colors">
+              <a href="https://igrejacapital.com.br" target="_blank" rel="noopener noreferrer" className="block text-gray-400 hover:text-gold transition-colors">
                 Igreja Batista Capital
               </a>
             </nav>
@@ -91,9 +91,6 @@ export function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-500 text-sm">
               © 2026 Igreja Batista Capital. Todos os direitos reservados.
-            </p>
-            <p className="text-gray-500 text-sm flex items-center gap-1">
-              Feito com <Heart className="w-4 h-4 text-red-500" /> por voluntários
             </p>
           </div>
         </div>

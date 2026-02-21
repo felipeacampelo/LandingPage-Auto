@@ -15,7 +15,7 @@ const sessions = [
 
 const infoItems = [
   { title: "Ingressos individuais", description: "Cada ingresso é válido para 1 pessoa e dá direito a 1 assento." },
-  { title: "Acomodação no auditório", description: "Os assentos não são numerados e serão ocupados por ordem de chegada. Recomendamos chegar com antecedência para garantir melhores lugares." },
+  { title: "Acomodação no auditório", description: "Os assentos são numerados por fila e numeração, mas serão distribuidos por ordem de chegada. Recomendamos chegar com antecedência para garantir melhores lugares." },
   { title: "Política para crianças", description: "Crianças a partir de 8 anos pagam ingresso normalmente. Crianças menores de 8 anos possuem gratuidade, porém não têm direito a assento, devendo permanecer no colo do responsável." },
   { title: "Acesso ao evento", description: "Apresente o QR Code ou o ticket recebido por e-mail no hall de entrada do auditório para validação." },
   { title: "Horário de entrada", description: "Fique atento ao horário da sua sessão. Chegue com antecedência para validar seu ingresso com tranquilidade e garantir melhor acomodação." },
@@ -64,7 +64,7 @@ export function TicketsSection() {
               </div>
             ))}
           </div>
-          <div className="mt-6 pt-6 border-t border-gold/20 flex items-center gap-2 text-gray-400">
+          <div className="mt-6 pt-6 border-t border-gold/20 flex flex-col sm:flex-row sm:items-center gap-2 text-gray-400">
             <Mail className="w-4 h-4 text-gold" />
             <span>Em caso de dúvidas, entre em contato: </span>
             <a href="mailto:eventos@igrejacapital.org.br" className="text-gold hover:underline">
