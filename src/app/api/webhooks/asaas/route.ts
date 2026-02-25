@@ -24,6 +24,13 @@ export async function POST(request: NextRequest) {
 
     console.log("Webhook Asaas recebido:", payload.event)
 
+    // Filtrar apenas pagamentos do Auto de Páscoa (doações)
+    const externalRef = payload.payment?.externalReference || ""
+    if (!externalRef.startsWith("autopascoa2026_")) {
+      console.log("Pagamento ignorado - não é do Auto de Páscoa:", externalRef)
+      return NextResponse.json({ received: true, ignored: true }, { status: 200 })
+    }
+
     if (
       payload.event === "PAYMENT_RECEIVED" ||
       payload.event === "PAYMENT_CONFIRMED"
