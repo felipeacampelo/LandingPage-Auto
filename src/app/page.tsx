@@ -5,7 +5,6 @@ import { HeroSection } from "@/components/HeroSection"
 import { AboutSection } from "@/components/AboutSection"
 import { FeaturesGrid } from "@/components/FeaturesGrid"
 import { TicketsSection } from "@/components/TicketsSection"
-import { DonateSection } from "@/components/DonateSection"
 import { DonateModal } from "@/components/DonateModal"
 import { Footer } from "@/components/Footer"
 
@@ -25,8 +24,7 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <FeaturesGrid />
-      <TicketsSection />
-      <DonateSection onDonateClick={handleDonateClick} />
+      <TicketsSection onDonateClick={handleDonateClick} />
       <Footer />
 
       <DonateModal

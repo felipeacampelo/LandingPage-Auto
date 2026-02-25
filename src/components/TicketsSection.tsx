@@ -16,7 +16,7 @@ const sessions = [
 const infoItems = [
   { title: "Ingressos individuais", description: "Cada ingresso é válido para 1 pessoa e dá direito a 1 assento." },
   { title: "Acomodação no auditório", description: "Os assentos são numerados por fila e numeração, mas serão distribuidos por ordem de chegada. Recomendamos chegar com antecedência para garantir melhores lugares." },
-  { title: "Política para crianças", description: "Crianças a partir de 8 anos pagam ingresso normalmente. Crianças menores de 8 anos possuem gratuidade, porém não têm direito a assento, devendo permanecer no colo do responsável." },
+  { title: "Política para crianças", description: "A classificação indicativa para Criança de 10 Anos. Crianças a partir de 3 anos pagam ingresso normalmente, garantindo o direito ao assento." },
   { title: "Acesso ao evento", description: "Apresente o QR Code ou o ticket recebido por e-mail no hall de entrada do auditório para validação." },
   { title: "Horário de entrada", description: "Fique atento ao horário da sua sessão. Chegue com antecedência para validar seu ingresso com tranquilidade e garantir melhor acomodação." },
 ]

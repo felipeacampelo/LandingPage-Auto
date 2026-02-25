@@ -44,7 +44,7 @@ export function DonateModal({ isOpen, onClose }: DonateModalProps) {
     cpf: "",
     phone: "",
   })
-  const [selectedValue, setSelectedValue] = useState(30)
+  const [selectedValue, setSelectedValue] = useState(20)
   const [customValue, setCustomValue] = useState("")
   const [errors, setErrors] = useState<Record<string, string>>({})
   const [isLoading, setIsLoading] = useState(false)
